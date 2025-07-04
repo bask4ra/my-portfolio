@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
-import { Moon, Sun, Menu, X, Brain, Code, Car, Pill, Ghost, Cat } from "lucide-react";
+import { Moon, Sun, Menu, X, Cat } from "lucide-react";
 import { useTheme } from "next-themes";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
