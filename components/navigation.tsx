@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
-import { Moon, Sun, Menu, X, Brain } from "lucide-react";
+import { Moon, Sun, Menu, X, Brain, Code, Car, Pill, Ghost, Cat } from "lucide-react";
 import { useTheme } from "next-themes";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
@@ -125,7 +125,7 @@ export function Navigation() {
             className="nav-item font-bold text-xl flex items-center gap-2 group cursor-pointer"
             onClick={() => scrollToSection("home")}
           >
-            <Brain
+            <Cat
               size={30}
               className="text-primary group-hover:scale-110 transition-transform duration-300"
             />
