@@ -91,7 +91,7 @@ export function Education() {
               Academic Background
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Formal education that built my foundation in technology
+              My Foundation Where Creativity Meets Code
             </p>
           </div>
 

@@ -29,7 +29,6 @@ export function Contact() {
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-        // Animation code here...
     }, contactRef);
 
     return () => ctx.revert();

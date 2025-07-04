@@ -20,50 +20,12 @@ export function Skills() {
 
     const timer = setTimeout(() => {
       const ctx = gsap.context(() => {
-        const titleElement = skillsRef.current?.querySelector(".skills-title");
-        if (titleElement) {
-          gsap.fromTo(
-            titleElement,
-            { opacity: 0, y: 50 },
-            {
-              opacity: 1,
-              y: 0,
-              duration: 1,
-              scrollTrigger: {
-                trigger: titleElement,
-                start: "top 80%",
-                end: "bottom 20%",
-                toggleActions: "play none none reverse",
-              },
-            }
-          );
-        }
-
-        const skillsContainer =
-          skillsRef.current?.querySelector(".skills-container");
-        if (skillsContainer) {
-          gsap.fromTo(
-            skillsContainer,
-            { opacity: 0, y: 30 },
-            {
-              opacity: 1,
-              y: 0,
-              duration: 1,
-              scrollTrigger: {
-                trigger: skillsContainer,
-                start: "top 85%",
-                end: "bottom 20%",
-                toggleActions: "play none none reverse",
-              },
-            }
-          );
-        }
-
+        // --- GSAP Animations remain the same, but slowed down for a smoother effect ---
         if (row1Ref.current) {
           gsap.set(row1Ref.current, { x: "0%" });
           gsap.to(row1Ref.current, {
             x: "-50%",
-            duration: 30,
+            duration: 40, // Slower duration
             ease: "none",
             repeat: -1,
           });
@@ -73,7 +35,7 @@ export function Skills() {
           gsap.set(row2Ref.current, { x: "-50%" });
           gsap.to(row2Ref.current, {
             x: "0%",
-            duration: 30,
+            duration: 40, // Slower duration
             ease: "none",
             repeat: -1,
           });
@@ -87,21 +49,56 @@ export function Skills() {
   }, []);
 
   const skillsRow1 = [
-    { name: "Adobe Illustrator", image: "/assets/svg/illustrator.svg" },
-    { name: "Adobe Photoshop", image: "/assets/svg/photoshop.svg" },
-    { name: "Adobe Xd", image: "/assets/svg/adobexd.svg" },
-    { name: "Clip Studio Paint", image: "/assets/svg/csp.svg" },
-    { name: "Procreate", image: "/assets/svg/procreate.svg" },
-    { name: "Figma", image: "/assets/svg/figma.svg" },
+    { 
+      name: "Adobe Illustrator", image: "/assets/svg/illustrator.svg", 
+      bgColor: "bg-orange-50 dark:bg-orange-900/20",
+    },
+    { 
+      name: "Adobe Photoshop", image: "/assets/svg/photoshop.svg", 
+      bgColor: "bg-blue-50 dark:bg-blue-800/20",
+    },
+    { 
+      name: "Adobe XD", image: "/assets/svg/adobexd.svg", 
+      bgColor: "bg-pink-50 dark:bg-pink-800/20",
+    },
+    { name: "Clip Studio Paint", image: "/assets/svg/csp.svg", 
+      bgColor: "bg-indigo-50 dark:bg-indigo-800/20",
+    },
+    { 
+      name: "Procreate", image: "/assets/svg/procreate.svg", 
+      bgColor: "bg-purple-50 dark:bg-purple-800/20",
+    },
+    { 
+      name: "Figma", image: "/assets/svg/figma.svg", 
+      bgColor: "bg-rose-50 dark:bg-rose-800/20",
+    },
   ];
 
   const skillsRow2 = [
-    { name: "SQL Server", image: "/assets/svg/sqlserver.svg" },
-    { name: "C#", image: "/assets/svg/csharp.svg" },
-    { name: "React", image: "/assets/svg/react.svg" },
-    { name: "Next JS", image: "/assets/svg/nextjs.svg" },
-    { name: "Tailwind CSS", image: "/assets/svg/tailwindcss.svg" },
-    { name: "Javascript", image: "/assets/svg/javascript.svg" },
+    { 
+      name: "SQL Server", image: "/assets/svg/sqlserver.svg", 
+      bgColor: "bg-red-50 dark:bg-red-900/20"
+    },
+    { 
+      name: "C#", image: "/assets/svg/csharp.svg", 
+      bgColor: "bg-purple-50 dark:bg-purple-900/20",
+    },
+    { 
+      name: "React", image: "/assets/svg/react.svg", 
+      bgColor: "bg-sky-50 dark:bg-sky-900/20",
+    },
+    { 
+      name: "Next JS", image: "/assets/svg/nextjs.svg",
+      bgColor: "bg-neutral-100 dark:bg-neutral-800/20",
+    },
+    { 
+      name: "Tailwind CSS", image: "/assets/svg/tailwindcss.svg", 
+      bgColor: "bg-cyan-50 dark:bg-cyan-900/20",
+    },
+    { 
+      name: "Javascript", image: "/assets/svg/javascript.svg", 
+      bgColor: "bg-yellow-50 dark:bg-yellow-900/20",
+    },
   ];
 
   const duplicatedRow1 = [...skillsRow1, ...skillsRow1];
@@ -121,7 +118,7 @@ export function Skills() {
                 {duplicatedRow1.map((skill, index) => (
                   <Card
                     key={`row1-${index}`}
-                    className="skill-item group cursor-pointer border-2 hover:border-primary/30 transition-all duration-300 hover:shadow-xl hover:-translate-y-0.5 flex-shrink-0 w-64 sm:w-72 md:w-80 my-2"
+                    className={`skill-item group cursor-pointer border-2 hover:border-primary/30 transition-all duration-300 hover:shadow-xl hover:-translate-y-0.5 flex-shrink-0 w-64 sm:w-72 md:w-80 my-2 ${skill.bgColor}`}
                   >
                     <CardContent className="flex items-center gap-3 sm:gap-4 md:gap-6 p-4">
                       <div className="relative w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-16 flex-shrink-0">
@@ -149,7 +146,7 @@ export function Skills() {
                 {duplicatedRow2.map((skill, index) => (
                   <Card
                     key={`row2-${index}`}
-                    className="skill-item group cursor-pointer border-2 hover:border-primary/30 transition-all duration-300 hover:shadow-xl hover:-translate-y-0.5 flex-shrink-0 w-64 sm:w-72 md:w-80 my-2"
+                    className={`skill-item group cursor-pointer border-2 hover:border-primary/30 transition-all duration-300 hover:shadow-xl hover:-translate-y-0.5 flex-shrink-0 w-64 sm:w-72 md:w-80 my-2 ${skill.bgColor}`}
                   >
                     <CardContent className="flex items-center gap-3 sm:gap-4 md:gap-6 p-4">
                       <div className="relative w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-16 flex-shrink-0">

@@ -33,20 +33,14 @@ export async function GET(): Promise<NextResponse<Educations>> {
     status: "Ungraduate",
     gpa: "3.35/4.00",
     description:
-      "Focused on Software Engineering, Human-Computer Interaction (HCI), and Full-Stack Web Development. Specialized in building robust software systems and user-centered applications. Completed a capstone project involving full-stack web development using modern technologies and industry best practices.",
+      "My studies focused on IoT Software Engineering and user-centered design. For my recenly project, I designed and developed a full-stack IoT management platform, handling everything from the UI/UX design in Figma and Adobe Suite to the implementation of its back-end, front-end, and database.",
 
     achievements: [
       {
-        title: "Community Service Committee",
+        title: "Paid Internship at Altus Logistics",
         description:
-          "Informatics Engineering Study Program - Technology Utilization for Learning Activities at PKBM 31 Jakarta and PKBM 21 Jakarta",
+          "Demonstrating technical skills that exceeded the standard curriculum, I successfully secured a paid professional internship as a Website Developer at PT. Altus Logistics Services Indonesia at the end of my 4th semester. This early entry into a professional role, complete with significant responsibilities and compensation, served as key recognition of my industry-ready capabilities",
         icon: "Users",
-      },
-      {
-        title: "3rd Place Hackathon Competition",
-        description:
-          'With the theme "Unleashing the Potential of Future Technology: Exploring New Business Opportunities in the Era of Artificial Intelligence"',
-        icon: "Trophy",
       },
     ],
     stats: [

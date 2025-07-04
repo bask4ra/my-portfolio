@@ -41,7 +41,7 @@ export async function POST(req: NextRequest) {
       </head>
       <body>
         <div class="email-container">
-          <div class="header"><h1>📧 New Contact Form Message</h1></div>
+          <div class="header"><h1>New Contact Form Message</h1></div>
           <div class="content">
             <div class="field-group"><span class="field-label">👤 Full Name</span><div class="field-value">${name}</div></div>
             <div class="field-group"><span class="field-label">📧 Email Address</span><div class="field-value">${email}</div></div>
