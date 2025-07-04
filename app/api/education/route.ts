@@ -31,7 +31,7 @@ export async function GET(): Promise<NextResponse<Educations>> {
     location: "Jakarta, Indonesia",
     period: "Sep 2022 - Present",
     status: "Ungraduate",
-    gpa: "3.35/4.00",
+    gpa: "3.36/4.00",
     description:
       "My studies focused on IoT Software Engineering and user-centered design. For my recenly project, I designed and developed a full-stack IoT management platform, handling everything from the UI/UX design in Figma and Adobe Suite to the implementation of its back-end, front-end, and database.",
 
@@ -45,7 +45,7 @@ export async function GET(): Promise<NextResponse<Educations>> {
     ],
     stats: [
       { label: "Years", value: "4", icon: "Calendar" },
-      { label: "GPA", value: "3.35", icon: "Award" },
+      { label: "SGPA", value: "3.36", icon: "Award" },
     ],
   };
 

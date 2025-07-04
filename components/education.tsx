@@ -129,7 +129,7 @@ export function Education() {
                     <div className="text-xl font-bold leading-none">
                       {educations?.gpa.split("/")[0]}
                     </div>
-                    <div className="text-xs opacity-80 mt-1">GPA / 4.00</div>
+                    <div className="text-xs opacity-80 mt-1">SGPA / 4.00</div>
                   </div>
                 </div>
               </div>
