@@ -43,10 +43,7 @@ export function Experience() {
     const ctx = gsap.context(() => {
       gsap.fromTo(
         ".experience-title",
-        {
-          opacity: 0,
-          y: 50,
-        },
+        { opacity: 0, y: 50, },
         {
           opacity: 1,
           y: 0,
@@ -123,6 +120,8 @@ export function Experience() {
                   }`}
                 >
                   <div className="timeline-dot absolute left-6 md:left-1/2 w-4 h-4 md:w-5 md:h-5 bg-primary rounded-full transform -translate-x-1/2 md:-translate-x-1/2 z-10 border-4 border-background shadow-lg top-6 flex items-center justify-center">
+                    {/* ICON YANG DIGUNAKAN DI SINI */}
+                    <Briefcase className="h-2 w-2 md:h-3 md:w-3 text-primary-foreground" />
                   </div>
 
                   <div
