@@ -23,11 +23,11 @@ const experiences: ExperienceState[] = [
     company_url: "https://altusindonesia.com/",
     locations_url: "https://maps.app.goo.gl/nRe9MzxrbqnnmVr86",
     location: "South Jakarta, Kuningan, DKI Jakarta, Indonesia",
-    period: "Jul 2024 - Apr 2025",
+    period: "Jul 2024 - Present",
     description:
       'At Altus Logistics Services Indonesia, I was responsible for maintaining and managing internal software systems. This role involved optimizing the internal database for enhanced performance, as well as implementing feature enhancements, performing updates, and resolving bugs to ensure the stability and functionality of the applications.',
     type: "Internship",
-    current_period: "April 2025",
+    current_period: "Until Now",
     responsibilities: [
       "Managed and maintained internal software applications built on the ASP.NET Framework using C#, ensuring their continuous stability, availability, and functionality to support the company's daily logistics operations.",
       "Utilized SQL Server Management Studio (SSMS) to design and execute efficient SQL queries for data management, while also optimizing internal database performance through query analysis, index management, and routine maintenance to ensure data integrity and speed.",

@@ -16,7 +16,7 @@ const experiences: ExperienceState[] = [
     slug: "internship-altus",
     company: "Altus Logistics Services",
     location: "South Jakarta, Kuningan, DKI Jakarta, Indonesia",
-    period: "Jul 2024 - Apr 2025",
+    period: "Jul 2024 - Present",
     description:
       "At Altus Logistics Services Indonesia, I was responsible for maintaining and managing internal software systems. This role involved optimizing the internal database for enhanced performance, as well as implementing feature enhancements, performing updates, and resolving bugs to ensure the stability and functionality of the applications.",
     type: "Internship",

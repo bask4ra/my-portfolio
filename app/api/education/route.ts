@@ -33,7 +33,7 @@ export async function GET(): Promise<NextResponse<Educations>> {
     status: "Ungraduate",
     gpa: "3.36/4.00",
     description:
-      "My studies focused on IoT Software Engineering and user-centered design. For my recenly project, I designed and developed a full-stack IoT management platform, handling everything from the UI/UX design in Figma and Adobe Suite to the implementation of its back-end, front-end, and database.",
+      "With a specialization in IoT Software Engineering and user-centered design, I recently led the end-to-end development of a full-stack IoT management platform. My role encompassed the entire project lifecycle, from UI/UX design in Figma and the Adobe Suite to the full implementation of the front-end, back-end, and database.",
 
     achievements: [
       {

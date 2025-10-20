@@ -64,7 +64,7 @@ export function Education() {
         }
         const data = await response.json();
         setEducations(data);
-      } catch (err) {
+      } catch (err) {0
         console.error("Error fetching education data:", err);
         setEducations(null);
       }
